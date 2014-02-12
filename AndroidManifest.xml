@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bebapay.mobile"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.READ_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.SherlockCustom" >
+        <activity
+            android:name="com.bebapay.mobile.StartActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.bebapay.mobile.Dashboard"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="Dashboard" />
+        <activity
+            android:name="com.bebapay.mobile.RouteData"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="Route Information" />
+        <activity
+            android:name="com.bebapay.mobile.UserData"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="Your Stats" />
+        <activity
+            android:name="com.bebapay.mobile.BarGraph"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="Your History" />
+        <activity
+            android:name="com.bebapay.mobile.StatisticsToday"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="Today" />
+        <activity
+            android:name="com.bebapay.mobile.StatisticsMonth"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="This Month" />
+        <activity
+            android:name="com.bebapay.mobile.StatisticsAllTime"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="All Time" />
+        <activity
+            android:name="com.bebapay.mobile.RouteDisplay"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="All Time" />
+        <activity
+            android:name="com.bebapay.mobile.About"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="About" />
+        <activity android:name="org.achartengine.GraphicalActivity" />
+    </application>
+
+</manifest>
